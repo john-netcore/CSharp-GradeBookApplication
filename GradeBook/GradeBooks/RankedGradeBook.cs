@@ -51,6 +51,7 @@ namespace GradeBook.GradeBooks
             }
         }
 
+        // Override Statistics
         public override void CalculateStatistics()
         {
             if (Students.Count < 5)
@@ -63,6 +64,7 @@ namespace GradeBook.GradeBooks
             }
         }
 
+        // Override Statistics
         public override void CalculateStudentStatistics(string name)
         {
             int nStudentsWithGrades = Students.Where(s => s.Grades.Count > 0).Count();
